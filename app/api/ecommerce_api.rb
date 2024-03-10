@@ -4,6 +4,7 @@ module EcommerceApi
     format 'json'
     prefix :api
 
+    # GET /api/v1/ping
     get :ping do
       {message: 'pong'}
     end
