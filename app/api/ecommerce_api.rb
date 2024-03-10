@@ -9,5 +9,6 @@ module EcommerceApi
       {message: 'pong'}
     end
 
+    mount EcommerceApi::Products
   end
 end
