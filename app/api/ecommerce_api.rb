@@ -1,7 +1,7 @@
 module EcommerceApi
   class Base < Grape::API
     version 'v1', using: :path
-    format json
+    format 'json'
     prefix :api
 
     get :ping do
