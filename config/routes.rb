@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  mount EcommerceApi::Base => '/'
+  mount EcommerceApi::EcommerceApi => '/'
+  mount EcommerceApi::Products => '/products'
+
 
   resources :groups
 
