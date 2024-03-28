@@ -48,7 +48,5 @@ group :development do
   # gem "spring"
 end
 
-
 gem "grape", "~> 2.0"
-gem 'grape-entity'
-
+gem "grape-entity"
