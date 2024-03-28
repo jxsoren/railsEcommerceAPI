@@ -31,10 +31,11 @@ module EcommerceApi
           product_params = params[:product]
           product = Product.new(product_params)
 
+          # Return created product back to client
           if product.save
-            # Return created product to client
             present product, with: EcommerceApi::V1::Entities::ProductEntity
           else
+            # Handle errors if unsuccessful
             error!({ error: product.errors.full_messages }, 422)
           end
         end
